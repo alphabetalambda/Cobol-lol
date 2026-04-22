@@ -1,0 +1,8 @@
+{
+  "tasks": [{
+    "label": "compile-cobol",
+    "type": "shell",
+    "command": "cobc -x ${file} -o ${fileBasenameNoExtension} && ./${fileBasenameNoExtension}",
+    "group": { "kind": "build", "isDefault": true }
+  }]
+}

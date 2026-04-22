@@ -1,0 +1,8 @@
+000100 IDENTIFICATION DIVISION.
+000200 PROGRAM-ID. HELLO.
+000300 AUTHOR. LodoreStiffler.
+000400* This is my first COBOL program.
+000500* It will display "Hello, World!" on the screen.
+000600 PROCEDURE DIVISION.
+000700     DISPLAY "Hello, World!".
+000800     STOP RUN.
