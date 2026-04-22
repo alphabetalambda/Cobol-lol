@@ -1,0 +1,27 @@
+000100 IDENTIFICATION DIVISION.
+000200 PROGRAM-ID. advancedvars.
+000300 AUTHOR. LodoreStiffler.
+000301*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+000400 DATA DIVISION. 
+000401*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+000500 WORKING-STORAGE SECTION.
+000600 01 ACCT-FIELDS.
+000700     05 ACCT-NOM PIC X(25).
+000800     05 ACCT-BAL PIC 9(7)V99.
+000900     05 FIRST-NAME PIC X(15).
+001000     05 LAST-NAME PIC X(15).
+001100     05 COMMENTS PIC X(50).
+001100*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+001200 PROCEDURE DIVISION.
+001300*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+001400     MOVE "JD32148" TO ACCT-NOM.
+001500     MOVE 12345.67 TO ACCT-BAL.
+001600     MOVE "John" TO FIRST-NAME.
+001700     MOVE "Doe" TO LAST-NAME.
+001800     MOVE "This is a comment." TO COMMENTS.
+001900     DISPLAY "Account Number: " ACCT-NOM.
+002000     DISPLAY "Account Balance: " ACCT-BAL.
+002100     DISPLAY "First Name: " FIRST-NAME.
+002200     DISPLAY "Last Name: " LAST-NAME.
+002300     DISPLAY "Comments: " COMMENTS.
+002400     STOP RUN.
